@@ -1,0 +1,38 @@
+.card{
+    width: 250px;
+    height: 350px;
+    border: 2px solid gray;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    margin: 10px;
+
+     
+    &__beerImage{
+        width: 35%;
+        height: 280px;
+        border: 2px solid black;
+        border-radius: 5px;
+        
+    }
+
+    &__name{
+        font-size: medium;
+    }
+    &__tagline{
+        font-size: medium;   
+    }
+    &__ph{
+        font-size: medium;   
+    }
+    &__abv{
+        font-size: medium;    
+    }
+    &__facts{
+        display: flex;
+        align-items: centre;
+        justify-content: space-evenly;
+
+    }
+}
