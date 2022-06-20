@@ -28,24 +28,47 @@ useEffect(() => {
 }, [url])
 
 const searchBeersByName = (event) => {
+  if(event.target.value ){
   setUrl( "https://api.punkapi.com/v2/beers?beer_name=" + event.target.value  )
+  }
 }
 
 const classicRange= (event) => {
-  setUrl("https://api.punkapi.com/v2/beers?brewed_before=01-2010" + event.target.checked )
+  if(event.target.checked === true){
+  setUrl("https://api.punkapi.com/v2/beers?brewed_before=01-2010"  )
+}else if (event.target.checked === false){
+  console.log(event.target.checked);
+setUrl("https://api.punkapi.com/v2/beers")
+}
+
 }
 
 const abvLessThanSix= (event) => {
-  setUrl("https://api.punkapi.com/v2/beers?abv_gt=6.0" + event.target.checked )
+if(event.target.checked === true){
+  setUrl("https://api.punkapi.com/v2/beers?abv_gt=6"  )
+}else if (event.target.checked === false){
+  console.log(event.target.checked);
+setUrl("https://api.punkapi.com/v2/beers")
 }
+};
+
 const phLowerThanFour= (event) => {
-  setUrl("https://api.punkapi.com/v2/beers?abv_lt=6.0" + event.target.checked )
+  if(event.target.checked === true){
+  setUrl("https://api.punkapi.com/v2/beers?ibu_lt=4")
+}else if (event.target.checked === false){
+  console.log(event.target.checked);
+setUrl("https://api.punkapi.com/v2/beers")
 }
+};
+
+
+
+
   
 console.log(beers);
   return (
     <div className="app">
-   <Navbar  searchBeers={searchBeersByName} classicRange={classicRange} abvLessThanSix={abvLessThanSix} />
+   <Navbar  searchBeers={searchBeersByName} classicRange={classicRange} abvLessThanSix={abvLessThanSix} phLowerThanFour={phLowerThanFour} />
    <Main beers={beers}/>
 </div>
   )
