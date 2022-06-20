@@ -1,0 +1,16 @@
+.beerInfo{
+    background-color: (#2d3436,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_content{
+        position: relative;
+        background-color: yellow;
+        width: 60%;
+        height: 60vw;
+        border-radius: 15px; 
+    }
+    &__cross {
+        right: 20px;
+      }
+}

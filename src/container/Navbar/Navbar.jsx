@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./Navbar.scss";
 import SearchBox from '../../components/SearchBox/SearchBox';
 import CheckBox from '../../components/CheckBox/CheckBox';

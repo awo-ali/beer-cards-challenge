@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import "./CardList.scss";
 import Card from "../Card/Card";
 
@@ -12,14 +12,13 @@ const CardList = (props) => {
         beerImage={beers.image_url}
         nameTag={beers.name}
         tagline={beers.tagline}
-    
       />
     ));
   };
 
   return (
-    <div className="cardsContainer" beers={beers}>
-      {cardArr(beers)}
+    <div className="cardsContainer" beers={beers} >
+      {cardArr(beers)} 
     </div>
   );
 };

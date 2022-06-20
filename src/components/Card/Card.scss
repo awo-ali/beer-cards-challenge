@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
 .card{
     width: 250px;
     height: 350px;
     border: 2px solid gray;
-    background: whitesmoke;
+    background: white;
     border-radius: 5px;
     text-align: center;
     //box-shadow: 5px 5px 5px 5px lightgray;
@@ -13,21 +15,31 @@
     &__beerImage{
         width: 35%;
         height: 280px;
-        border: 2px solid black;
+       
         border-radius: 5px;
         border: none;
-        
     }
 
     &__name{
         font-size: medium;
         color:black;
+        font-family: 'Explora', cursive;
+        font-size: x-large;
+       font-weight: bold;
     }
+
     &__tagline{
         font-size: medium;   
     }
+
+  
   
 }
-.card:hover{
-    background: rgba(45, 52, 54, 0.5);
-}
+
+ .card:hover{
+  // background: rgba(45, 52, 54, 0.5); 
+       transform: scale(1.25);
+      transition: transform .15s linear;
+     position:relative;
+     z-index:5;
+       }
