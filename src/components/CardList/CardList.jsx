@@ -1,31 +1,27 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import "./CardList.scss";
-import Card from '../Card/Card';
-import beers from '../../data/beers';
-
+import Card from "../Card/Card";
 
 
 const CardList = (props) => {
-    console.log(beers);
-    console.log(beers[2]);
-    console.log(beers[2].name);
-    console.log(beers[4].image_url);
+  const { beers } = props;
 
-    const [ beerDisplayed, setBeerDisplayed] = useState(beers)
-
-    const cardArr = (beers) => {  return beers.map((beers) => (
-        
-         <Card beerImage={beers.image_url} nameTag={beers.name}  tagline={beers.tagline} ph={beers.ph}  abv={beers.abv}  />
-        
-      ));
-     console.log(cardArr);
-    }
+  const cardArr = (beers) => {
+    return beers.map((beers) => (
+      <Card
+        beerImage={beers.image_url}
+        nameTag={beers.name}
+        tagline={beers.tagline}
     
+      />
+    ));
+  };
+
   return (
-    <div className='cardsContainer'>
-   {cardArr(beerDisplayed)}
+    <div className="cardsContainer" beers={beers}>
+      {cardArr(beers)}
     </div>
-  )
-}
+  );
+};
 
 export default CardList;
