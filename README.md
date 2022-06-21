@@ -23,8 +23,10 @@ Classic Range (Was first brewed before 2010)
 High Acidity(pH lower than 4)
 
 
-Extension 3 - Style the website howeveryou see fit! Go wild!
+Extension 3 - Style the website however you see fit! Go wild!
 
 
+
+Completed project below !!
 
 <img src="src/assets/images/beer-cards-challenge%20.png"/>
