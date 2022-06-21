@@ -1,3 +1,4 @@
 API - Beer-Cards-Challenge
 
-<img src="images/beer-cards-challenge.png" alt="project image" />
+![](../beer-cards-challenge/src/assets/images/beer-cards-challenge%20.png)
+<img src="../beer-cards-challenge/src/assets/images/beer-cards-challenge%20.png" alt="project image" />
