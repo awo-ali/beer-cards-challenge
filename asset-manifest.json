@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/beer-cards-challenge/static/css/main.e7f0d0f1.css",
-    "main.js": "/beer-cards-challenge/static/js/main.6d4ef20a.js",
+    "main.css": "/beer-cards-challenge/static/css/main.b4b06791.css",
+    "main.js": "/beer-cards-challenge/static/js/main.5b40b286.js",
     "static/js/787.dde79e73.chunk.js": "/beer-cards-challenge/static/js/787.dde79e73.chunk.js",
     "index.html": "/beer-cards-challenge/index.html",
-    "main.e7f0d0f1.css.map": "/beer-cards-challenge/static/css/main.e7f0d0f1.css.map",
-    "main.6d4ef20a.js.map": "/beer-cards-challenge/static/js/main.6d4ef20a.js.map",
+    "main.b4b06791.css.map": "/beer-cards-challenge/static/css/main.b4b06791.css.map",
+    "main.5b40b286.js.map": "/beer-cards-challenge/static/js/main.5b40b286.js.map",
     "787.dde79e73.chunk.js.map": "/beer-cards-challenge/static/js/787.dde79e73.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7f0d0f1.css",
-    "static/js/main.6d4ef20a.js"
+    "static/css/main.b4b06791.css",
+    "static/js/main.5b40b286.js"
   ]
 }
