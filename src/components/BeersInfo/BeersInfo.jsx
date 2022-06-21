@@ -3,6 +3,7 @@ import React from 'react'
 import "./BeersInfo.scss";
 import blackCross from "../../assets/images/black-cross.png"
 
+
 const BeersInfo = (props) => {
   const {toggleBeerInfo, beer}= props
   
