@@ -9,11 +9,6 @@ const Navbar = (props) => {
 
   const { searchBeers, classicRange, abvLessThanSix, phLowerThanFour} = props
 
-
-
-
-   
-
   return (
     <div className='navbar'>
 <SearchBox  searchBeers={searchBeers}  />

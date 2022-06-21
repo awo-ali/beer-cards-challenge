@@ -6,7 +6,7 @@ const Main = (props) => {
   const {beers} = props
   return (
     <div className='main'>
-        <CardList beers={beers}/>
+        <CardList beers={beers} />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import Card from "../Card/Card";
 
 
 const CardList = (props) => {
-  const { beers } = props;
+  const { beers} = props;
 
   const cardArr = (beers) => {
     return beers.map((beers) => (
@@ -12,6 +12,7 @@ const CardList = (props) => {
         beerImage={beers.image_url}
         nameTag={beers.name}
         tagline={beers.tagline}
+        beer={beers}
       />
     ));
   };

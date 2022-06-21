@@ -3,8 +3,8 @@
 .card{
     width: 250px;
     height: 350px;
-    border: 2px solid gray;
-    background: white;
+    //border: 2px solid gray;
+    background: whitesmoke;
     border-radius: 5px;
     text-align: center;
     //box-shadow: 5px 5px 5px 5px lightgray;
@@ -32,14 +32,19 @@
         font-size: medium;   
     }
 
+   
   
   
 }
 
  .card:hover{
-  // background: rgba(45, 52, 54, 0.5); 
-       transform: scale(1.25);
-      transition: transform .15s linear;
-     position:relative;
-     z-index:5;
-       }
+ background:  lightgray;
+ cursor: pointer;
+ box-shadow: 0 0.4rem 1.4rem 0;
+//  transform: scale(1.02);
+//  transform: transform 100ms; 
+//        transform: scale(1.25);
+//       transition: transform .15s linear;
+//      position:relative;
+     
+    }
