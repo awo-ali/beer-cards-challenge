@@ -11,12 +11,12 @@ const Navbar = (props) => {
 
   return (
     <div className='navbar'>
-<SearchBox  searchBeers={searchBeers}  />
+<SearchBox className='navbar_searchBox' searchBeers={searchBeers}  />
 <div className='navbar__titleBlock'>
 <h1 className='navbar__title'>BEER ON TAP</h1>
 <img className="navbar__beerIcon" src={beerIcon} alt="beerImage"/>
 </div>
-<CheckBox classicRange={classicRange} abvLessThanSix={abvLessThanSix} phLowerThanFour={phLowerThanFour}/>
+<CheckBox className='navbar_checkBox' classicRange={classicRange} abvLessThanSix={abvLessThanSix} phLowerThanFour={phLowerThanFour}/>
 
     </div>
   )

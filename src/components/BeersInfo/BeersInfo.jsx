@@ -13,6 +13,7 @@ const BeersInfo = (props) => {
 
     <div className='beerInfo'>
       <img src={blackCross} alt="Close beer info" className="beerInfo__cross" onClick={toggleBeerInfo}/>
+
         <div className='beerInfo_content'>
 
           <img className='beerInfo_image' src={beer.image_url} alt="" />
@@ -21,14 +22,16 @@ const BeersInfo = (props) => {
 
           <h2 className='beerInfo_nameTag'>{beer.name}</h2>
 
-          <div className='beerInfo_abv-ph'>
-          <h3 className='beerInfo_abv'>abv:{beer.abv}</h3>
-          <h4 className='beerInfo_ph'>pH:{beer.ph}</h4>
-          </div>
+          <p1 className='beerInfo_tagline'>{beer.tagline} </p1><br />
 
-          <h5 className='beerInfo__tagline'> <strong> Tagline </strong> ~ {beer.tagline} </h5><br />
-          <p1 className='beerInfo_description'> <strong>Description</strong> ~ {beer.description}</p1><br />
-          <p2 className= 'beerInfo_food-pairings'> <strong> Food Pairings </strong> ~ {beer.food_pairing}</p2><br />
+          <p2 className='beerInfo_description'> <strong>Description</strong> ~ {beer.description}</p2><br />
+          <p3 className= 'beerInfo_food-pairings'> <strong> Food Pairings </strong> ~ {beer.food_pairing}</p3><br />
+
+          
+          <div className='beerInfo_values'>
+          <h3 className='beerInfo_abv'>  ABV - {beer.abv}</h3>
+          <h4 className='beerInfo_ph'>PH - {beer.ph}</h4>
+          </div>
 
           </div>
 

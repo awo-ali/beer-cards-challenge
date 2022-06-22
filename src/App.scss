@@ -5,7 +5,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Lora', serif;
-    color: black
+    color: black;
+
    
 }
 
@@ -17,6 +18,11 @@
     flex-direction: column;
     
 
-    
+
+}
+
+@media screen and (max-width: 480px) {
+
+
 
 }

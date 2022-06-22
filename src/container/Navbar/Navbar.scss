@@ -10,7 +10,7 @@
  
 &__titleBlock{
   display: flex;
-  //border: 2px solid black;
+  
   width: 300px;
   justify-content: space-between;
   align-items: center;
@@ -20,15 +20,15 @@
      
    }
    
-   &__beerImage{
-    width: 50px;
-    height: 60px;
-   background-color: transparent;
-   }
-&__beerLogo{
-  width: 70px;
 
 }
 
-}
+@media screen and (max-width: 480px) {
+  .navbar_searchBox{
+    display: none;
+  }
 
+  .navbar_checkBox{
+    display: none;
+  }
+}
