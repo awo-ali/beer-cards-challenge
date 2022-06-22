@@ -22,3 +22,10 @@
       }
     }
   }
+
+
+  @media screen and (max-width: 480px){
+    .search-box{
+      display: none;
+    }
+  }
